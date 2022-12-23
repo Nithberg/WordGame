@@ -16,13 +16,13 @@ class Player:
         return f"Ваше имя: {self.player_name}\nВы использовали слова: {self.used_words}"
 
 
-player_name = 'Alex'
-used_words = ["братишка", "писюшка"]
-
-player_one = Player(player_name, used_words)
-print(player_one)
-print(player_one.get_words_used())
-print(player_one.is_already_used("писюшка"))
-
-player_one.add_word_to_used('аркашка')
-print(player_one)
+# player_name = 'Alex'
+# used_words = ["братишка", "писюшка"]
+#
+# player_one = Player(player_name, used_words)
+# print(player_one)
+# print(player_one.get_words_used())
+# print(player_one.is_already_used("писюшка"))
+#
+# player_one.add_word_to_used('аркашка')
+# print(player_one)
