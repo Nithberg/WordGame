@@ -1,9 +1,10 @@
 from utils import *
 from classes.Player import Player
 
-user_name = input("Введите ваше имя: ")
+player_name = input("Введите ваше имя: ")
+used_words = []
 
-player = Player(user_name, [])
+player = Player(player_name, used_words)
 
 print(f"Привет, {player.player_name}!")
 
