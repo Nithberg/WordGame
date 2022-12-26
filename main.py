@@ -20,7 +20,7 @@ while len(player.used_words) != word.counting_words():
         break
     elif len(user_answer) < 3:
         print("Слишком короткое слово, попробуйте еще раз!")
-    elif not user_answer in word.set_of_words:
+    elif user_answer not in word.set_of_words:
         print("Данного слова нет в списке слов для угадывания, попробуйте еще раз!")
     elif player.is_already_used(user_answer):
         print("Данное слово уже использовалось, попробуйте еще раз!")
