@@ -16,16 +16,3 @@ class BasicWord:
 
     def __repr__(self):
         return f"Основное слово -  {self.original_word} / Набор подслов - {self.set_of_words}"
-
-
-data = {
-    "original_word": "питон",
-    "set_of_words": ["пони", "тон", "ион", "опт", "пот", "тип", "топ", "пион", "понт"]
-}
-
-# get_words = BasicWord(data.get("original_word"), data.get("set_of_words"))
-# print(get_words)
-#
-# user_input = "пионпп"
-# print(get_words.word_in_set(user_input))
-# print(get_words.counting_words())

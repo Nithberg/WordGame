@@ -14,20 +14,8 @@ data_words = load_data(DATA_SOURCE)
 
 
 def get_random_word():
-    words = []
+    random_words = random.choice(data_words)
 
-    for value in data_words:
-        words.append(BasicWord(
-            value["word"],
-            value["subwords"]
-        ))
-    random.shuffle(words)
+    basic_word = BasicWord(random_words["word"], random_words["subwords"])
 
-    for word in words:
-        get_word = word
-
-    print(f"Составьте {len(get_word.set_of_words)} слов из слова {get_word.original_word.upper()}")
-
-
-
-get_random_word()
+    return basic_word
